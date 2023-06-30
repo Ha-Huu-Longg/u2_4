@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+.header-scope {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1300px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu-toggle {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #333;
+    transition: left 0.3s ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.menu-toggle.open {
+    left: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.menu-list {
+    font-size: 25px;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-item {
+    text-align: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: white;
+    color: black;
+}
+
+.col-sm-12 {
+    width: calc(100% - 12px) !important;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: 100%;
+}
+
+.item-menu {
+    cursor: pointer;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.item-exit {
+    display: inline-block;
+    width: 100%;
+}
+
+.cart {
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+.cart-food-scope {
+    gap: 20px 0;
+    margin: 100px 0 50px 0;
+}
+
+.cart-food {
+    width: 300px;
+    text-align: center;
+}
+
+.cart-about {
+    height: 600px;
+    width: 600px;
+    align-self: center;
+}
+
+.image-food {
+    height: 200px;
+    width: 300px;
 }
